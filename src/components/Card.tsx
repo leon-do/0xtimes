@@ -27,8 +27,8 @@ export default function Card(props: CardsProps) {
       <div className="px-6 py-5 text-left h-full">
         <Link href={props.url}>
           <h1 className="mb-4 text-3xl hover:underline">
-            {props.subject.slice(0, 60)}
-            {props.subject.length > 60 ? "..." : ""}
+            {props.subject.slice(0, 70)}
+            {props.subject.length > 70 ? "..." : ""}
           </h1>
         </Link>
         <p className="mb-4">{props.date}</p>
