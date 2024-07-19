@@ -3,15 +3,25 @@ import Link from "next/link";
 
 // https://neo-brutalism-ui-library.vercel.app/components/card
 export default function Card(props: Page) {
-  // replace /hello-world.html with hello world
-  const title = props.source.replace(".html", "").replace(/[/-]/g, " ").trim();
+  // convert time from 1721406522002 to Fri Jul 19 2024
   const time = new Date(props.time).toDateString();
+
+  // parse site.com+hello-world.html to site.com
+  const host = props.source.split("+")[0];
+
+  // parse site.com+hello-world.html to hello world
+  const title = props.source
+    .split("+")[1]
+    .split(".html")[0]
+    .replace(/[/-]/g, " ")
+    .trim();
+
   return (
     <article className="border-black border-2 rounded-md shadow-[5px_5px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
       <figure className="border-black border-b-2">
         <Link href={props.destination}>
           <Image
-            src={props.image || "/img/placeholder.png"}
+            src={"/img/placeholder.png"}
             alt={props.source}
             width={0}
             height={0}
@@ -28,6 +38,13 @@ export default function Card(props: Page) {
           </h1>
         </Link>
       </div>
+      <Link
+        target="_blank"
+        href={`https://${host}`}
+        className="hover:underline px-6"
+      >
+        {host || ""}
+      </Link>
       <div className="px-6 pb-5">{time == "Invalid Date" ? "" : time}</div>
     </article>
   );

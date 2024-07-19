@@ -11,7 +11,7 @@ export default async function getPages(): Promise<Page[]> {
     .sort((a, b) => b.time - a.time)
     .map((file) => {
       return {
-        source: `/${file.source}`,
+        source: file.source,
         destination: `/html/${file.source}`,
         time: file.time,
       };
