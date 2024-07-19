@@ -13,6 +13,7 @@ export default async function getPages(): Promise<Page[]> {
       return {
         source: `/${file.source}`,
         destination: `/html/${file.source}`,
+        time: file.time,
       };
     });
 }
