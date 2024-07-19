@@ -1,9 +1,9 @@
 import Nav from "../components/Nav";
 import Card from "../components/Card";
-import pages from "../config/pages.json";
+import getPages from "../utils/getPages";
 
-export default function Home() {
-  console.log(pages);
+export default async function Home() {
+  const pages = await getPages();
   return (
     <>
       <Nav />
