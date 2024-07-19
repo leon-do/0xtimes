@@ -5,8 +5,9 @@ import Link from "next/link";
 export default function Card(props: Page) {
   // replace /hello-world.html with hello world
   const title = props.source.replace(".html", "").replace(/[/-]/g, " ").trim();
+  const time = new Date(props.time);
   return (
-    <article className="w-full h-full border-black border-2 rounded-md shadow-[5px_5px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+    <article className="border-black border-2 rounded-md shadow-[5px_5px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
       <figure className="border-black border-b-2">
         <Link href={props.destination}>
           <Image
@@ -19,14 +20,15 @@ export default function Card(props: Page) {
           />
         </Link>
       </figure>
-      <div className="px-6 py-5 text-left h-full">
+      <div className="px-6 py-5 min-h-48">
         <Link href={props.destination}>
-          <h1 className="mb-4 text-3xl hover:underline">
-            {title.slice(0, 70)}
-            {title.length > 70 ? "..." : ""}
+          <h1 className="mb-4 text-3xl hover:underline break-words">
+            {title.slice(0, 60)}
+            {title.length > 60 ? "..." : ""}
           </h1>
         </Link>
       </div>
+      <div className="px-6 pb-5">{time.toDateString()}</div>
     </article>
   );
 }

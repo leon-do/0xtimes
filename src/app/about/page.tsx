@@ -13,7 +13,7 @@ export default function About() {
           influential, setting journalistic standards.
         </div>
         <div className="text-xl p-4">
-          Now in this era, notable organizations include
+          Now in this era, notable organizations include:
         </div>
         <ul className="text-xl p-4">
           <li>- The New York Times</li>
@@ -26,37 +26,36 @@ export default function About() {
           The prefix &quot;0x&quot; has a specific meaning in computer science
           and mathematics, particularly in the context of number systems. 0x is
           used to indicate that the following number is in hexadecimal (base-16)
-          format and is used in
+          format and is used in.
         </div>
         <ul className="text-xl p-4">
           <li>
             - EVM addresses. &quot;0x&quot; followed by 40 hexadecimal
-            characters
+            characters.
           </li>
           <li>
             - Smart contract functions: “0x” followed by the first 4 bytes of
-            the hash of the function
+            the hash of the function.
           </li>
         </ul>
 
         <div className="text-5xl p-4">0xTimes</div>
         <div className="text-xl p-4">
-          0xTimes combines our love of modern computer science with the past
-          eras.
+          0xTimes archives the latest email news on blockchain technology.
         </div>
         <div className="text-xl p-4">How it works under the hood:</div>
         <ul className="text-xl p-4">
           <li>
-            - We email subscribe to the best and newestblockchain projects
+            - We email subscribe to the best and newest blockchain projects.
           </li>
           <li>
-            - For every new email, we immediately archive it on our website
+            - For every new email, we immediately archive it on our website.
           </li>
           <li>
             - Our website will display the latest news in reverse chronological
-            order
+            order.
           </li>
-          <li>- Our site is then backed up on the permanent web</li>
+          <li>- Our site is then backed up on the permanent web.</li>
         </ul>
 
         <div className="text-5xl p-4">Design</div>
@@ -65,9 +64,11 @@ export default function About() {
           stray from the homogenization of web design. Having looked through the
           previous “Times”, we chose this to have more personality.
         </div>
-        <div className="text-xl p-4">How it works under the hood:</div>
+        <div className="text-xl p-4">Design choices:</div>
         <ul className="text-xl p-4">
-          <li>- Icons from spectrums.framer.website</li>
+          <li>- spectrums.framer.website</li>
+          <li>- font Archivo Black</li>
+          <li>- max 60 char title</li>
         </ul>
       </div>
     </>

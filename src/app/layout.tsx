@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Archivo_Black } from "next/font/google";
 import "./globals.css";
 
-const archivoBlack = Archivo_Black({
+const font = Archivo_Black({
   subsets: ["latin"],
   weight: "400"
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={archivoBlack.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
