@@ -65,6 +65,10 @@ export default function About() {
           stray from the homogenization of web design. Having looked through the
           previous “Times”, we chose this to have more personality.
         </div>
+        <div className="text-xl p-4">How it works under the hood:</div>
+        <ul className="text-xl p-4">
+          <li>- Icons from spectrums.framer.website</li>
+        </ul>
       </div>
     </>
   );
