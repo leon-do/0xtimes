@@ -4,7 +4,7 @@ import "./globals.css";
 
 const font = Syne({
   subsets: ["latin"],
-  weight: "600"
+  weight: "600",
 });
 
 export const metadata: Metadata = {
