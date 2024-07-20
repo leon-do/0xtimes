@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Archivo_Black } from "next/font/google";
+import { Syne } from "next/font/google";
 import "./globals.css";
 
-const font = Archivo_Black({
+const font = Syne({
   subsets: ["latin"],
-  weight: "400"
+  weight: "600"
 });
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-yellow-50">
       <body className={font.className}>{children}</body>
     </html>
   );

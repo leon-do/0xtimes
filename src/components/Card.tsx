@@ -22,9 +22,9 @@ export default function Card(props: Page) {
       <figure className="border-black border-b-2">
         <Link href={props.destination}>
           {/* background justify=horizontal items=vertical */}
-          <div className="h-60 flex justify-center items-center">
+          <div className="h-56 flex justify-center items-center bg-blue-300">
             {/* rounded image */}
-            <div className="w-48 h-48 overflow-hidden rounded-full border-black border-2 shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+            <div className="w-44 h-44 overflow-hidden rounded-full border-black border-2 shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
               <Image
                 className="object-cover"
                 // @ts-ignore
@@ -36,6 +36,7 @@ export default function Card(props: Page) {
                 style={{
                   width: "100%",
                   height: "100%",
+                  backgroundColor: "rgba(255, 255, 255, 0.80)",
                 }}
               />
             </div>

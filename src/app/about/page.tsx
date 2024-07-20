@@ -67,7 +67,7 @@ export default function About() {
         <div className="text-xl p-4">Design choices:</div>
         <ul className="text-xl p-4">
           <li>- spectrums.framer.website</li>
-          <li>- font Archivo Black</li>
+          <li>- font Syne</li>
           <li>- max 60 char title</li>
         </ul>
       </div>

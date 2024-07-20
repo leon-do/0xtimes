@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Nav() {
   return (
     <nav>
-      <div className="border-b-4 h-16 flex items-center justify-center space-x-32">
+      <div className="border-b-4 border-black h-16 flex items-center justify-center space-x-16 md:space-x-32">
         <Image src="/img/logo.svg" alt="logo" width={32} height={32} />
         <div className="hover:underline text-xl">
           <Link href="/">Home</Link>
