@@ -50,7 +50,7 @@ export default function Card(props: Page) {
       </figure>
 
       {/* bottom half */}
-      <figure className="h-60 bg-slate-200">
+      <figure className="h-60 bg-slate-100">
         {/* title */}
         <div className="px-6 py-5 h-44">
           <Link href={props.destination}>

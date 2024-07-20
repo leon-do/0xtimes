@@ -69,6 +69,7 @@ export default function About() {
           <li>- spectrums.framer.website</li>
           <li>- font Syne</li>
           <li>- max 60 char title</li>
+          <li>- default tailwind colors </li>
         </ul>
       </div>
     </>
