@@ -4,11 +4,11 @@
 
 .dot {
   /* diameter of the circle */
-  --d: 3px;
+  --d: 2px;
   background: radial-gradient(
       circle at var(--d) var(--d),
       #a7a7a7 calc(var(--d) - 1px),
       #0000 var(--d)
     )
-    0 0 / 30px 30px;
+    0 0 / 15px 15px;
 }
