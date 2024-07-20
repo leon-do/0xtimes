@@ -6,7 +6,7 @@ import getBgColor from "../utils/getBgColor";
 export default function Sponsor() {
   return (
     <div
-      className={`bg-red-400 h-96 flex justify-center border-black rounded-md border-2 shadow-[10px_10px_0px_rgba(0,0,0,1)]  hover:shadow-[12px_12px_0px_rgba(0,0,0,1)]`}
+      className={`${getBgColor()} h-96 flex justify-center border-black rounded-md border-2 shadow-[10px_10px_0px_rgba(0,0,0,1)]  hover:shadow-[12px_12px_0px_rgba(0,0,0,1)]`}
     >
       <Link href="https://youtube.com" target="_blank">
         <Image
