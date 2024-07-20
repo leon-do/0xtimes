@@ -4,7 +4,7 @@ import "./globals.css";
 
 const font = Syne({
   subsets: ["latin"],
-  weight: "600",
+  weight: ["600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-yellow-50">
+    <html lang="en" className="bg-pink-100">
       <body className={font.className}>{children}</body>
     </html>
   );
